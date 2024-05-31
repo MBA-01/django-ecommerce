@@ -1,0 +1,18 @@
+{% extends "admin/change_list.html" %}
+
+{% comment %} {% extends "admin/change_list.html" %}
+{% load static %}
+
+{% block content %}
+  {{ block.super }}
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      const buttons = document.querySelectorAll('a.button');
+      buttons.forEach(button => {
+        button.classList.add('btn', 'btn-primary');
+      });
+    });
+  </script>
+{% endblock %} {% endcomment %}
+
+

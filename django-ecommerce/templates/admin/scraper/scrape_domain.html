@@ -1,0 +1,13 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block title %}Scrape Domain{% endblock %}
+
+{% block content %}
+  <h1>Scrape Domain</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="default">Start Scraping</button>
+  </form>
+{% endblock %}

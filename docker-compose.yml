@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  postgres_data:
+    image: postgres:16  # Using PostgreSQL version 16
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: globitem_db
+      POSTGRES_USER: guest_user
+      POSTGRES_PASSWORD: Glob123
+    ports:
+      - "5432:5432"  # Optional: Only expose if you need to access the database locally
+
+  web:
+    build: .
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    volumes:
+      - ./django-ecommerce:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres_data
+    environment:
+      DATABASE_URL: postgresql://guest_user:Glob123@db:5432/globitem  # Ensure this matches your db settings
+
+volumes:
+  postgres_data:

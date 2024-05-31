@@ -1,0 +1,299 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to [Your Store Name]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .welcome {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-wrap hero-bread" style="background-image: url({% static 'images/bg_1.jpg' %});">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+          	<p class="breadcrumbs"><span class="mr-2"><a href="{% url 'home' %}">Home</a></span> <span>About us</span></p>
+            <h1 class="mb-0 bread">About us</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/africa_2.svg' %});">
+						{% comment %} <a href="https://youtube.com/shorts/1zzNGRet6fA" class="icon popup-vimeo d-flex justify-content-center align-items-center"> {% endcomment %}
+              <iframe width="600" height="1000" src="https://www.youtube.com/embed/Uyl_VAFOF80" title="GlobItem" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							<span class="icon-play"></span>
+						</a>
+					</div>
+					<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
+	          <div class="heading-section-bold mb-4 mt-md-5">
+	          	<div class="ml-md-0">
+		            <h2 class="mb-4">Welcome to Vegefoods an eCommerce website</h2>
+	            </div>
+	          </div>
+	          <div class="pb-md-5">
+
+              <!DOCTYPE html>
+
+    <div class="container">
+        <div class="welcome">
+            <h1>Welcome to GlobItem!</h1>
+            <p>Discover the world of exquisite cultural accessories and unique products from around the globe, right at your fingertips. At GlobItem, we are passionate about bringing you the finest selection of handcrafted and carefully curated items that reflect the rich heritage and artistry of diverse cultures.</p>
+            <h2>Why Shop With Us?</h2>
+            <ul>
+                <li><strong>Authentic and Handcrafted Products:</strong> Our collection features genuine, high-quality products made by skilled artisans from various parts of the world.</li>
+                <li><strong>Wide Range of Categories:</strong> Whether you're looking for traditional jewelry, home decor, fashion accessories, or unique gifts, we have something special for everyone.</li>
+                <li><strong>Seamless Shopping Experience:</strong> Enjoy a user-friendly shopping experience with easy navigation, secure payment options, and reliable shipping services.</li>
+                <li><strong>Customer Satisfaction:</strong> We value our customers and strive to provide excellent service. Our dedicated team is here to assist you with any inquiries or support you may need.</li>
+            </ul>
+            <h2>Explore Our Collections</h2>
+            <p>Start your journey by exploring our diverse categories and find the perfect items that resonate with your taste and style. From the vibrant markets of Marrakech to the serene landscapes of Kyoto, let our products take you on a cultural adventure.</p>
+            <h2>Stay Connected</h2>
+            <p>Don't miss out on our latest arrivals, special offers, and cultural insights. Subscribe to our newsletter and follow us on social media to stay updated and inspired.</p>
+            <h2>Thank You for Choosing GlobItem</h2>
+            <p>We are delighted to have you here and look forward to serving you with the best products and exceptional service. If you have any questions or need assistance, please feel free to contact us.</p>
+            <p>Happy Shopping!</p>
+            <p>Warm regards,</p>
+            <p>The GlobItem Team</p>
+        </div>
+    </div>
+							<p><a href="#" class="btn btn-primary">Shop now</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
+      <div class="container py-4">
+        <div class="row d-flex justify-content-center py-5">
+          <div class="col-md-6">
+          	<h2 style="font-size: 22px;" class="mb-0">Subcribe to our Newsletter</h2>
+          	<span>Get e-mail updates about our latest shops and special offers</span>
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <form action="#" class="subscribe-form">
+              <div class="form-group d-flex">
+                <input type="text" class="form-control" placeholder="Enter email address">
+                <input type="submit" value="Subscribe" class="submit px-3">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+		<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url({% static 'images/africa_2.svg' %});">
+    	<div class="container">
+    		<div class="row justify-content-center py-5">
+    			<div class="col-md-10">
+		    		<div class="row">
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="10000">0</strong>
+		                <span>Happy Customers</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="100">0</strong>
+		                <span>Branches</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="1000">0</strong>
+		                <span>Partner</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="100">0</strong>
+		                <span>Awards</span>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+		<section class="ftco-section testimony-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+          	<span class="subheading">Testimony</span>
+            <h2 class="mb-4">Our satisfied customer says</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel">
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url({% static 'images/person_1.jpg' %})">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text text-center">
+                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Garreth Smith</p>
+                    <span class="position">Marketing Manager</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url({% static 'images/person_2.jpg' %})">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text text-center">
+                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Garreth Smith</p>
+                    <span class="position">Interface Designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url({% static 'images/person_3.jpg' %})">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text text-center">
+                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Garreth Smith</p>
+                    <span class="position">UI Designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url({% static 'images/person_1.jpg' %})">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text text-center">
+                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Garreth Smith</p>
+                    <span class="position">Web Developer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url({% static 'images/person_1.jpg' %})">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text text-center">
+                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Garreth Smith</p>
+                    <span class="position">System Analyst</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+			<div class="container">
+				<div class="row no-gutters ftco-services">
+          <div class="col-lg-3 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services mb-md-0 mb-4">
+              <div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
+            		<span class="flaticon-shipped"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Free Shipping</h3>
+                <span>On order over $100</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services mb-md-0 mb-4">
+              <div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
+            		<span class="flaticon-diet"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Always Fresh</h3>
+                <span>Product well package</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services mb-md-0 mb-4">
+              <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
+            		<span class="flaticon-award"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Superior Quality</h3>
+                <span>Quality Products</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services mb-md-0 mb-4">
+              <div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
+            		<span class="flaticon-customer-service"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Support</h3>
+                <span>24/7 Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+		</section>
+{% endblock %}

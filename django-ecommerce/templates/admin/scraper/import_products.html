@@ -1,0 +1,20 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block title %}Import Products{% endblock %}
+
+{% block content %}
+  <h1>Import Products</h1>
+  <form method="post">
+    {% csrf_token %}
+    <div>
+      <label for="domain">Select Domain:</label>
+      <select name="domain" id="domain">
+        {% for domain in domains %}
+          <option value="{{ domain.name }}">{{ domain.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <button type="submit" class="default">Import Products</button>
+  </form>
+{% endblock %}

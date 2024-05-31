@@ -1,0 +1,14 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block title %}Modify Product{% endblock %}
+
+{% block content %}
+  <h1>Modify Product: {{ product.title }}</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="default">Save Changes</button>
+    <a href="{% url 'admin:scraper_scraperproduct_changelist' %}" class="button">Cancel</a>
+  </form>
+{% endblock %}
