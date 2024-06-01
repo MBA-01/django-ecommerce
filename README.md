@@ -46,8 +46,8 @@ Ensure you have the following installed on your system:
 
 1. **Clone the Project Repository**
     ```bash
-    git clone https://github.com/your-repo/globitem.git
-    cd globitem
+    git clone https://github.com/MBA-01/django-ecommerce.git
+    cd django-ecommerce
     ```
 
 2. **Set Up Virtual Environment**
