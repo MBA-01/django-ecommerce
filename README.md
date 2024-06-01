@@ -119,6 +119,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 - **Author:** Mohamed El Bachrioui
 - **Email:** Medelbachriouijr@gmail.com
-- **Phone:** +212 632 788 555
 
 Thank you for using GlobItem!
